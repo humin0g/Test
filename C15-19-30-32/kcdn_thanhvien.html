@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kcdn_thanhvien.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Gluten:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dự án web - Kể chuyện đất nước</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="group">
+          <a href="#" class="group-content">
+            <span class="group-content__title">TMT - 12C15</span>
+          </a>
+        </div>
+        <nav class="navigation-bar">
+          <ul>
+            <li class="navigation-item">
+              <a href="Landing.html" class="navigation-direction">Trang Chủ</a>
+            </li>
+            <li class="navigation-item">
+              <a href="kcdn_thanhvien.html" class="navigation-direction"
+                >Thành Viên</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="kcdn_hoatdong.html" class="navigation-direction"
+                >Nội Dung</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="group-members">
+        <div class="member__1">
+          <div class="member-items__leader">
+            <img src="humiavt._kcdn.jpg" alt="nitrxte" />
+            <h2>Nguyễn Hùng Minh</h2>
+            <button class="btn view-profile" data-modal="modal-leader">
+              View Profile
+            </button>
+          </div>
+        </div>
+        <div class="member__2">
+          <img src="thanhavt_kcdn.jpg" alt="Thanh" />
+          <h2>Nguyễn Bình Phương Thanh</h2>
+          <button class="btn view-profile" data-modal="modal-member__2">
+            View Profile
+          </button>
+        </div>
+        <div class="member__3">
+          <img src="athuavt_kcdn.jpg" alt="Athu" />
+          <h2>Nguyễn Ngọc Anh Thư</h2>
+          <button class="btn view-profile" data-modal="modal-member__3">
+            View profile
+          </button>
+        </div>
+      </section>
+      <!-- Modals -->
+      <div class="modal" id="modal-leader">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Nguyễn Hùng Minh - 19</h2>
+          <p class="team-position"><strong>Nhóm Trưởng</strong></p>
+          <p>Thiết kế và trình bày nội dung</p>
+        </div>
+      </div>
+      <div class="modal" id="modal-member__2">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Nguyễn Bình Phương Thanh - 30</h2>
+          <p class="team-position"><strong>Thành Viên</strong></p>
+          <p>Giới thiệu</p>
+        </div>
+      </div>
+      <div class="modal" id="modal-member__3">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Nguyễn Ngọc Anh Thư - 32</h2>
+          <p class="team-position"><strong>Thành Viên</strong></p>
+          <p>Nội dung</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer-note">TMT - 2026</p>
+      </footer>
+    </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+                // Get all view profile buttons
+                const viewProfileButtons = document.querySelectorAll('.view-profile');
+                
+                // Get all modals
+                const modals = document.querySelectorAll('.modal');
+                
+                // Get all close buttons
+                const closeButtons = document.querySelectorAll('.close');
+                
+                // Function to open modal
+                function openModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    if (modal) {
+                        modal.style.display = 'block';
+                    }
+                }
+                
+                // Function to close modal
+                function closeModal(modal) {
+                    modal.style.display = 'none';
+                }
+                
+                // Add event listeners to view profile buttons
+                viewProfileButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const modalId = this.getAttribute('data-modal');
+                        openModal(modalId);
+                    });
+                });
+                
+                // Add event listeners to close buttons
+                closeButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const modal = this.parentElement.parentElement;
+                        closeModal(modal);
+                    });
+                });
+                
+                // Close modal when clicking outside of modal content
+                window.addEventListener('click', function(event) {
+                    modals.forEach(modal => {
+                        if (event.target === modal) {
+                            closeModal(modal);
+                        }
+                    });
+                });
+            });
+    </script>
+  </body>
+</html>

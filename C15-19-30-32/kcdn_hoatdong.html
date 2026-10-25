@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kcdn_hoatdong.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Gluten:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dự án web - Kể chuyện đất nước</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="group">
+          <a href="#" class="group-content">
+            <span class="group-content__title">TMT - 12C15</span>
+          </a>
+        </div>
+        <nav class="navigation-bar">
+          <ul>
+            <li class="navigation-item">
+              <a href="Landing.html" class="navigation-direction">Trang Chủ</a>
+            </li>
+            <li class="navigation-item">
+              <a href="kcdn_thanhvien.html" class="navigation-direction">Thành Viên</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-direction">Nội Dung</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="opening" id="opening">
+        <div class="start">
+          <h2>I. Đặc sản TP. Hồ Chí Minh có gì?</h2>
+          <p>Đặc sản của TP. Hồ Chí Minh rất đa dạng và phong phú, nổi bật là món ăn đường phố kết hợp các đặc sản mua làm quà.</p>
+          <p>Đặc sản có thể được chia làm hai nhóm chính:</p>
+        </div>
+        <div class="food-group">
+          <p class="group-one">Món ăn bản địa: Những món đã gắn liền với lịch sử hình thành vùng đất Gia Định xưa.</p>
+          <p class="group-two">Món ăn giao thoa: Những món từ vùng khác (Miền Tây, Miền Trung, hoặc từ cộng đồng người Hoa) du nhập vào, được biến tấu lại để phù hợp với khẩu vị người Sài Gòn.</p>
+        </div>
+      </section>
+      <section class="part-two" id="part2">
+        <h2>II. Điểm đặc biệt của đặc sản Sài Gòn</h2>
+        <ol>
+          <li>Điều làm nên sức hút của ẩm thực nơi đây không nằm ở sự cầu kỳ, sang trọng mà ở:</li>
+          <li>Sự phóng khoáng và đa dạng: Bạn có thể tìm thấy món ăn từ bình dân vỉa hè đến nhà hàng cao cấp.</li>
+          <li>Vị ngọt đặc trưng: Người Sài Gòn thường ưa chuộng vị ngọt thanh từ đường hoặc nước dừa trong các món kho, nấu.</li>
+          <li>Văn hóa "mở": Luôn sẵn sàng tiếp nhận cái mới, biến tấu món ăn gốc thành một phiên bản mới mẻ hơn (ví dụ: Bánh mì kẹp đủ thứ nhân hay Phá lấu ăn kèm bánh mì).</li>
+        </ol>
+      </section>
+      <section class="part-three" id="part3">
+        <h2>III. Một số ví dụ điển hình</h2>
+        <div class="dishes-gallery">
+          <div class="dish-card" onclick="openModal('modal1')">
+            <div class="dish-image-placeholder"><img src="Cơm_Tấm,_Da_Nang,_Vietnam.jpg" alt="Cơm tấm - minh họa"></div>
+            <h3>Cơm tấm</h3>
+            <p>Được mệnh danh là "linh hồn" của thành phố. Một đĩa cơm tấm sườn bì chả với nước mắm kẹo ngọt cay là hình ảnh quen thuộc từ sáng sớm đến đêm muộn.</p>
+            <button class="view-btn">Xem thêm</button>
+          </div>
+          
+          <div class="dish-card" onclick="openModal('modal2')">
+            <div class="dish-image-placeholder"><img src="banh-mi-sai-gon-2.jpg" alt="Bánh mì"></div>
+            <h3>Bánh mì Sài Gòn</h3>
+            <p>Không chỉ là món ăn sáng, bánh mì Sài Gòn là biểu tượng toàn cầu với sự kết hợp hoàn hảo giữa vỏ bánh giòn và nhân pate, bơ, thịt nguội, đồ chua.</p>
+            <button class="view-btn">Xem thêm</button>
+          </div>
+          
+          <div class="dish-card" onclick="openModal('modal3')">
+            <div class="dish-image-placeholder"><img src="hu-tieu-nam-vang-sai-gon-5.jpg" alt=""></div>
+            <h3>Hủ tiếu Nam Vang</h3>
+            <p>Dù có nguồn gốc từ Campuchia và do người Hoa chế biến, nhưng khi về Sài Gòn, nó đã trở thành món ăn quốc dân với nước dùng đậm đà từ xương ống và mực khô.</p>
+            <button class="view-btn">Xem thêm</button>
+          </div>
+          
+          <div class="dish-card" onclick="openModal('modal4')">
+            <div class="dish-image-placeholder"><img src="pha-lau-bo-sai-gon-6.jpg" alt=""></div>
+            <h3>Phá lấu</h3>
+            <p>Một món ăn vặt kinh điển của học sinh, sinh viên, thường ăn kèm với bánh mì hoặc mì gói.</p>
+            <button class="view-btn">Xem thêm</button>
+          </div>
+          
+          <div class="dish-card" onclick="openModal('modal5')">
+            <div class="dish-image-placeholder"><img src="cong-thuc-pha-ca-phe-sua-da-sai-gon.jpg" alt=""></div>
+            <h3>Cà phê sữa đá</h3>
+            <p>Một "đặc sản văn hóa" không thể thiếu trong nếp sống hằng ngày của người dân nơi đây.</p>
+            <button class="view-btn">Xem thêm</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <div class="modal-image-placeholder"><img src="Cơm_Tấm,_Da_Nang,_Vietnam.jpg" alt="Cơm tấm - minh họa"></div>
+          <h2>Cơm tấm</h2>
+          <p>Được mệnh danh là "linh hồn" của thành phố. Một đĩa cơm tấm sườn bì chả với nước mắm kẹo ngọt cay là hình ảnh quen thuộc từ sáng sớm đến đêm muộn.</p>
+          <p><em>Cơm tấm trước đây chủ yếu chỉ dùng cho bữa sáng, nhưng sau này người ta còn dùng trong cả bữa trưa lẫn bữa tối. Không chỉ phổ biến ở các hàng quán lề đường, ngày nay món ăn còn xuất hiện trong các nhà hàng, quán ăn sang trọng và trải dài rộng khắp trên lãnh thổ Việt Nam .</em></p>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <div class="modal-image-placeholder"><img src="banh-mi-sai-gon-2.jpg" alt=""></div>
+          <h2>Bánh mì Sài Gòn</h2>
+          <p>Không chỉ là món ăn sáng, bánh mì Sài Gòn là biểu tượng toàn cầu với sự kết hợp hoàn hảo giữa vỏ bánh giòn và nhân pate, bơ, thịt nguội, đồ chua.</p>
+          <p><em>bánh mì Sài Gòn có một khởi nguồn thú vị, bắt đầu từ những năm đầu thế kỷ 20 khi thực dân Pháp du nhập bánh mì baguette vào Việt Nam. Ban đầu, những chiếc bánh mì này được xem là món ăn xa xỉ, chủ yếu phục vụ giới thượng lưu và người phương Tây sinh sống tại Việt Nam. Tuy nhiên, với sự sáng tạo và tinh thần thích nghi của người dân địa phương, nó dần trở nên phổ biến hơn, len lỏi vào từng ngóc ngách của cuộc sống thường nhật, biến thành một thức quà giản dị nhưng đầy ý nghĩa.</em></p>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <div class="modal-image-placeholder"><img src="hu-tieu-nam-vang-sai-gon-5.jpg" alt=""></div>
+          <h2>Hủ tiếu Nam Vang</h2>
+          <p>Dù có nguồn gốc từ Campuchia và do người Hoa chế biến, nhưng khi về Sài Gòn, nó đã trở thành món ăn quốc dân với nước dùng đậm đà từ xương ống và mực khô.</p>
+          <p><em>Thành phần của một tô hủ tiếu Nam Vang Sài Gòn gồm gan heo, hủ tiếu, thịt băm xào, tôm luộc và rau sống. Để thưởng thức đặc sản Sài Gòn này bạn có thể ăn khô hoặc ăn nước. Nếu ăn nước thì phần nước lèo được ninh từ xương và rau củ sẽ được chan ngập trong tô. Còn đối với hủ tiếu Nam Vang khô, khi ăn bạn chỉ cần thêm ít dầu tỏi phi thơm, nước sốt pha từ đường, xì dầu sau đó trộn thật đều với các nguyên liệu là có thể thưởng thức. </em></p>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <div class="modal-image-placeholder"><img src="pha-lau-bo-sai-gon-6.jpg" alt=""></div>
+          <h2>Phá lấu</h2>
+          <p>Một món ăn vặt kinh điển của học sinh, sinh viên, thường ăn kèm với bánh mì hoặc mì gói.</p>
+          <p><em>Một chén phá lấu khá vừa vặn, bé hơn chén cơm một chút để khi ăn xong thực khách không bị ngán mà vẫn còn “thòm thèm”. Lòng bò được sơ chế sạch sẽ, không hôi, không cứng, bánh mì ăn kèm có độ giòn vừa đủ. Đặc biệt, món phá lấu bò đúng điệu Sài Gòn là phải đi kèm chén nước chấm pha bằng nước me và nước mắm rồi thêm chút ớt bột cay cay.</em></p>
+        </div>
+      </div>
+
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <div class="modal-image-placeholder"><img src="cong-thuc-pha-ca-phe-sua-da-sai-gon.jpg" alt=""></div>
+          <h2>Cà phê sữa đá</h2>
+          <p>Một "đặc sản văn hóa" không thể thiếu trong nếp sống hằng ngày của người dân nơi đây.</p>
+          <p><em>Đượm hương cà phê, béo ngậy vị sữa, ngọt ngào hơn nhờ những câu chuyện tâm tình, đây chính là nét văn hoá đẹp của vùng đất Sài Gòn nhộn nhịp.</em></p>
+        </div>
+      </div>
+      <section class="part-four" id="part4">
+        <h2>IV. Vai trò đóng góp mang đến với Thành phố</h2>
+        <ol>
+          <li>Kinh tế: Là ngành mũi nhọn trong dịch vụ và du lịch. Các tour ẩm thực (food tour) bằng xe máy đang cực kỳ hút khách quốc tế.</li>
+          <li>Văn hóa: Phản ánh tính cách con người Sài Gòn: cởi mở, chân thành và năng động. Nó giúp gắn kết cộng đồng cư dân từ nhiều địa phương khác nhau.</li>
+          <li>Thương hiệu: Giúp nâng cao vị thế của TP.HCM trên bản đồ du lịch thế giới (nhiều món ăn đã được vinh danh bởi Michelin hoặc các tạp chí du lịch lớn).</li>
+        </ol>
+      </section>
+      <section class="end" id="end">
+        <p>TP Hồ Chí Minh không chỉ là trung tâm kinh tế sôi động mà còn là nơi hội tụ tinh hoa ẩm thực từ khắp mọi miền. Những món đặc sản nơi đây không chỉ mang hương vị riêng biệt mà còn thể hiện sự giao thoa văn hóa độc đáo của vùng đất này. Vì vậy, khi nhắc đến TP Hồ Chí Minh, người ta không chỉ nhớ đến nhịp sống hiện đại mà còn nhớ đến một “thiên đường ẩm thực” phong phú, hấp dẫn, góp phần làm nên nét đẹp rất riêng của thành phố.</p>
+      </section>
+      <footer class="footer">
+        <p class="footer-note">TMT - 2026</p>
+      </footer>
+    </main>
+
+    <script>
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+          event.target.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+          const modals = document.querySelectorAll('.modal');
+          modals.forEach(modal => {
+            if (modal.style.display === "block") {
+              modal.style.display = "none";
+              document.body.style.overflow = "auto";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

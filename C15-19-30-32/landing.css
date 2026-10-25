@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #E6F0FA;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navigation Bar */
+.header {
+  background-color: #FFCACA; /* pink background matching image */
+  height: 100px; /* match the image's header height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: 0; /* full-width container */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.group {
+  max-width: auto;
+}
+
+/* navigation list styling */
+.navigation-bar ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  border-radius: 10px;
+  background-color: thistle;
+  padding: 10px 20px;
+}
+
+.navigation-bar .navigation-direction {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+  gap: 40px;
+  color: black;
+}
+
+.navigation-item:hover .navigation-direction {
+  font-weight: bold;
+}
+
+.group-content {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  height: 70px;
+}
+
+.group-content__title {
+  font-family: 'Montserrat', 'Roboto Condensed', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+/* Title Section */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 90px 0;
+  font-family: "fira sans", "Open Sans", "Roboto Condensed", "Arimo", "Montserrat", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.subtitle-one {
+  font-size: 24px;
+}
+
+.title-main {
+  font-size: 70px;
+}
+
+.subtitle-class {
+  font-size: 20px;
+}
+
+.subtitle-members {
+  font-size: 18px;
+}
+
+/* Introduction Section */
+.introduction {
+  position: relative;
+  text-align: center;
+  color: none;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-family: "Merriweather", "Lora", "Gluten", "Francois One", "Montserrat", "Roboto Condensed", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.introduction-title {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 21%;
+  transform: translateY(-50%);
+  max-width: 35%;
+  line-height: 1.1;
+}
+
+.introduction-paragraph-1 {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 12%;
+  max-width: 35%;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: "Lora", "Merriweather", "Gluten", "Francois One", "Montserrat", "Roboto Condensed", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.introduction-paragraph-2 {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 25%;
+  right: 12%;
+  max-width: 35%;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: "Lora", "Merriweather", "Gluten", "Francois One", "Montserrat", "Roboto Condensed", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.introduction-paragraph-3 {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  max-width: 35%;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: "Lora", "Merriweather", "Gluten", "Francois One", "Montserrat", "Roboto Condensed", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.introduction-image {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.introduction-image:hover {
+  filter:brightness(50%)
+}
+
+.introduction-paragraph-1:hover,
+.introduction-paragraph-2:hover,
+.introduction-paragraph-3:hover {
+  background-color: black; /* gold color on hover */
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E6F0FA;
+  background-color: black;
+}

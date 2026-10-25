@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #E6F0FA;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navigation Bar */
+.header {
+  background-color: #FFCACA; /* pink background matching image */
+  height: 100px; /* match the image's header height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: 0; /* full-width container */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.group {
+  max-width: auto;
+}
+
+/* navigation list styling */
+.navigation-bar ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  border-radius: 10px;
+  background-color: thistle;
+  padding: 10px 20px;
+}
+
+.navigation-bar .navigation-direction {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+  gap: 40px;
+  color: black;
+}
+
+.navigation-item:hover .navigation-direction {
+  font-weight: bold;
+}
+
+.group-content {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  height: 70px;
+}
+
+.group-content__title {
+  font-family: 'Montserrat', 'Roboto Condensed', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E6F0FA;
+  background-color: black;
+}
+
+/* member styles */
+.group-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 44px 20px;
+}
+
+.member-items__leader {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "fira sans", "Open Sans", "Roboto Condensed", "Arimo", "Montserrat", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.member-items__leader img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.member-items__leader:hover{
+  transform: translateY(-10px);
+}
+
+.member__2 {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "fira sans", "Open Sans", "Roboto Condensed", "Arimo", "Montserrat", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.member__2:hover {
+  transform: translateY(-10px);
+}
+
+.member__2 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.member__3 {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "fira sans", "Open Sans", "Roboto Condensed", "Arimo", "Montserrat", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.member__3:hover {
+  transform: translateY(-10px);
+}
+
+.member__3 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+  font-family: "fira sans", "Open Sans", "Roboto Condensed", "Arimo", "Montserrat", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.modal-content h2 {
+  font-size: 30px;
+}
+
+.team-position {
+  font-size: 20px;
+}
+
+.modal-contetn p {
+  font-size: 15px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* button */
+.btn {
+  color: black;
+  background-color: #ffdb58;
+  padding: 8px 16px;
+  border-radius: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-style: italic;
+}
+
+.btn:hover {
+  font-weight: bold;
+  size: 36px;
+}
